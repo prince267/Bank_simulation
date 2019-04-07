@@ -12,16 +12,27 @@ The input will be in the following format:
 ./runprogram --numCashiers=3 --numCustomers=100 --timePerCustomer=3
 
 The output will be the following format:
+
 2019-04-05 13:20:22 --> Bank Simulation Started
+
 2019-04-05 13:20:22 --> Cashier 1: Customer 1 Started
+
 2019-04-05 13:20:22 --> Cashier 2: Customer 2 Started
+
 2019-04-05 13:20:22 --> Cashier 3: Customer 3 Started
+
 2019-04-05 13:20:22 --> Cashier 2: Customer 2 Completed
+
 2019-04-05 13:20:22 --> Cashier 1: Customer 1 Completed
+
 2019-04-05 13:20:22 --> Cashier 2: Customer 4 Started
+
 .......
+
 .......
+
 .......
+
 2019-04-05 13:20:22 --> Bank Simulated Ended
 
 Notes:
