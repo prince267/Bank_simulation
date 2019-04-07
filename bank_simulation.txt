@@ -1,0 +1,30 @@
+Data structure : we will use GoRoutines and Go channels  and for loop
+
+functions : 
+    we will create a function banksimulation ( cashier id, coustomers, results)
+    and for each coustomers an unoccupied cashier is allocated and it is done by 
+    using synchronous channels
+
+Psuedo code :
+    fun banksimulation( cashier id, coustomers <- chan int , results chan <- int)
+    {//coustomers is of type of channels which only sends the Data
+    //results is the channel which only recieves the Data
+    for j : range coustomers{
+        print(cashier id,coustomers no) // for starting
+        time.sleep(3*time.sends)
+        print(cashier id,coustomers no) // for starting
+        results <- 1
+    }
+    }
+
+    func main(){
+        coustomers := make(chan int , no_of_coustemers)
+        results := make( chan int , no_of_coustemers)
+        for cashier_id =1 to no_of_cashier:
+            go banksimulation(cashier_id,coustomers,results)
+        for coustomer =1 to no_of_coustemers:
+            coustomers <- coustomer
+        close(coustomers)
+        for j=1 to no_of_coustemers:
+            <- results
+    }
